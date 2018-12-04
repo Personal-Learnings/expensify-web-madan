@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const template = (
-  <div>
-    <p>Hello Its Working</p>
-  </div>
-);
+import AppRouter from "./routers/AppRouter";
 
-ReactDOM.render(template, document.getElementById("app"));
+import "./styles/bootstrap.min.css";
+import "./styles/offcanvas.css";
+
+ReactDOM.render(<AppRouter />, document.getElementById("app"));
