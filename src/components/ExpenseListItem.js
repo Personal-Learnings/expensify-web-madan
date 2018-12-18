@@ -11,9 +11,15 @@ const ExpenseListItem = ({ id, name, description, amount, date, index }) => (
     <td>{amount}</td>
     <td>{date}</td>
     <td>
-      <button type="submit" className="btn btn-danger btn-sm">
-        Delete
-      </button>
+      <div>
+        <button type="submit" className="btn btn-info btn-sm">
+          Edit
+        </button>
+        <span> </span>
+        <button type="submit" className="btn btn-danger btn-sm">
+          Delete
+        </button>
+      </div>
     </td>
   </tr>
 );
